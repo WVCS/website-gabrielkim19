@@ -1,3 +1,18 @@
 body {
+  font-family: system-ui;
+  background: teal;
+  color: black;
+  text-align: center;
+}
 
+h2 {
+  text-decoration: wavy underline 2px black;
+  text-shadow: 3px 8px 2px black;
+}
+img:hover {
+    border: 25px ridge green;
+    }
+
+nav a:hover {
+  color: #04AA6D; 
 }
