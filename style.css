@@ -1,18 +1,55 @@
 body {
   font-family: system-ui;
-  background: teal;
-  color: black;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
   text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
 }
 
 h2 {
-  text-decoration: wavy underline 2px black;
-  text-shadow: 3px 8px 2px black;
+  font-size: 2.5rem;
+  color: #ffd700;
+  text-shadow: 4px 4px 0px #ff6b6b, 8px 8px 0px #4ecdc4;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
 }
+
+img {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
 img:hover {
-    border: 25px ridge green;
-    }
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  border: 5px solid #ffd700;
+}
+
+nav {
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
 
 nav a:hover {
-  color: #04AA6D; 
+  background: #ffd700;
+  color: #764ba2;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255,215,0,0.4);
 }
